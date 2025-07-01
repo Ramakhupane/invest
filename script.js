@@ -1,7 +1,7 @@
 async function fetchStockData() {
   const symbol = document.getElementById('symbolInput').value.toUpperCase();
   if (!symbol) return alert('Enter a stock symbol');
-  const API_KEY = 'demo'; // Replace with your real API key from Alpha Vantage
+  const API_KEY = '4bfa6b81592a472cbbeee6ce779ae4ca'; // Your real API key
 
   const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&apikey=${API_KEY}`;
   const res = await fetch(url);
