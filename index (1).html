@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestWise AI - Smart Stock Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📈 InvestWise AI</h1>
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#login">Login</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dashboard">
+      <h2>Live Stock Analysis</h2>
+      <input type="text" id="symbolInput" placeholder="Enter Stock Symbol (e.g. AAPL)" />
+      <button onclick="fetchStockData()">Analyze</button>
+      <div id="stockInfo"></div>
+      <canvas id="stockChart"></canvas>
+    </section>
+
+    <section id="login">
+      <h2>Login</h2>
+      <form action="login.php" method="POST">
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="register">
+      <h2>Register</h2>
+      <form action="register.php" method="POST">
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 InvestWise AI. Powered by Ramakhupane Sekhenene.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
